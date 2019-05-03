@@ -1,0 +1,95 @@
+﻿body {
+    background-image: url(../Image/Isk.jpg) ;
+    background-repeat: no-repeat;
+
+    background-size:100%;
+}
+.lol {
+    float: right;
+}
+header{
+    margin: 400px;
+    font-family: Arial;
+}
+.mmenu *{
+    margin:0;
+    padding:0;
+}
+.mmenu ul,
+.mmenu ol{
+    list-style: none;
+}
+.mmenu > ul{
+    display: flex;
+    justify-content: center ;
+}
+.mmenu > ul li a{
+    display: block;
+    background: #ececed;
+    padding: 15px 30px 15px 40px;
+    font-size: 14px;
+    color: #454547;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.mmenu > ul li{
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+}
+.mmenu > ul li > a i.fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+.mmenu >  ul li:first-child{
+    border-left: 1px solid #b2b3b5;
+}
+.mmenu > ul li:last-child{
+    border-right: 1px solid #babbbb;
+}
+.mmenu li a:hover {
+    background: #454547;
+    color: #ffffff;
+}
+.mmenu li ul{
+    position: absolute;
+    min-width: 250px;
+    display: none;
+}
+    .mmenu li ul p {
+        position: absolute;
+        min-width: 150px;
+        display: none;
+    }
+    .mmenu li ul :hover > p {
+        display: block;
+        position: fixed;
+        top: 80px;
+        left: 40%;
+        z-index: 99;
+    }
+.mmenu t {
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.mmenu :hover > t {
+    display: block;
+    z-index: 99;
+    position: fixed;
+    top: 80px;
+    left: 40%;
+}
+.mmenu li > ul li {
+    border: 1px solid #c7c8ca;
+}
+    .mmenu li > ul li ul {
+        position: absolute;
+        right: -230px;
+        top: 0px;
+        z-index: 99;
+    }
+.mmenu li:hover > ul {
+    display: block;
+}
